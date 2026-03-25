@@ -1,0 +1,105 @@
+<!-- HTML e CSS totalmente desenvolvido pelo copilot, afim de entender melhor o funcionamento do agente, não focando necessariamente na performace e beleza do layout -->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas e Água Express</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gas e Água Express</h1>
+      <p>Entrega rápida na sua região.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="produtos">
+        <h2>Produtos</h2>
+
+        <article>
+          <h3>Gás de cozinha</h3>
+          <p>Botijão de 13kg com entrega em domicílio.</p>
+          <ul>
+            <li>Verde (Reformado)</li>
+            <li>Azul (Novo)</li>
+          </ul>
+          <p>Preço consultado no pedido.</p>
+        </article>
+
+        <article>
+          <h3>Água mineral</h3>
+          <p>Galões de 20L e garrafas de 500ml.</p>
+          <ul>
+            <li>20L</li>
+            <li>500ml</li>
+            <li>1,5L</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Acessórios</h3>
+          <p>Regulador e mangueira para botijão.</p>
+          <ul>
+            <li>Regulador de pressão</li>
+            <li>Mangueira flexível</li>
+            <li>Chaves e ferramentas básicos</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="sobre">
+        <h2>Sobre nós</h2>
+        <p>
+          Empresa familiar com entrega diária de gás e água. Atendemos casas e
+          comércios, priorizando segurança, atendimento e agilidade.
+        </p>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>WhatsApp: (00) 9 0000-0000</p>
+        <p>E-mail: pedidos@gaseaguaexpress.com.br</p>
+
+        <h3>Faça seu pedido</h3>
+        <form>
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" /><br /><br />
+
+          <label for="endereco">Endereço:</label><br />
+          <input type="text" id="endereco" name="endereco" /><br /><br />
+
+          <label for="produto">Produto:</label><br />
+          <select id="produto" name="produto">
+            <option value="gas13">Gás 13kg</option>
+            <option value="agua20">Água 20L</option>
+            <option value="agua500">Água 500ml</option></select
+          ><br /><br />
+
+          <label for="quantidade">Quantidade:</label><br />
+          <input
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            min="1"
+          /><br /><br />
+
+          <button type="submit">Enviar pedido</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Gas e Água Express. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
