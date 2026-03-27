@@ -1,24 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="theme-toggle-container">
+      <button
+        class="theme-toggle"
+        aria-label="Alternar entre tema claro e escuro"
+        title="Alternar tema"
+      >
+        <span class="toggle-slider">
+          <span class="toggle-icon">🌙</span>
+        </span>
+      </button>
+    </div>
     <main>
-        <h1>Quem está assistindo?</h1>
-        <div class="profiles">
-            <div class="profile">
-                <img src="assets/img-perfil1-gemini-generated.png" alt="Perfil 1">
-                <p>Perfil 1</p>
-            </div>
-            <div class="profile">
-                <img src="assets/img-perfil2.jpg" alt="Perfil 2">
-                <p>Perfil 2</p>
-            </div>
-
-        </div>
+      <h1>Quem está assistindo?</h1>
+      <section aria-label="Perfis disponíveis">
+        <ul class="profiles">
+          <li>
+            <a href="#" class="profile">
+              <figure>
+                <img
+                  src="assets/img-perfil1-gemini-generated.png"
+                  alt="Um personagem de aparência gótica e caricata, com cabelos pretos e roupa de luta de boxe, posa em um cenário fantástico de miniaturas sombrias iluminadas por velas."
+                />
+                <figcaption>Luan</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="profile">
+              <figure>
+                <img
+                  src="assets/img-perfil2.jpg"
+                  alt="Imagem de um boné azul"
+                />
+                <figcaption>João</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="profile">
+              <figure>
+                <img
+                  src="assets/img-perfil3.png"
+                  alt="Imagem de um cachorro fofinho"
+                />
+                <figcaption>Doguinho</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="profile">
+              <figure>
+                <img
+                  src="assets/img-perfil-kids.png"
+                  alt="Imagem escrita KIDS com letras coloridas e divertidas"
+                />
+                <figcaption>Kids</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
+    <script src="theme.js"></script>
+  </body>
 </html>
